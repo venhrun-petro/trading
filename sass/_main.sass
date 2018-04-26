@@ -1,0 +1,35 @@
+.ic 
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	background: $icons no-repeat
+
+
+@each $i in next, prev
+	.ic--#{$i}
+		+s(ic--#{$i})
+
+
+
+
+.main 
+	position: relative
+	min-height: 100%
+
+header 
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+
+footer 
+	position: absolute
+	left: 0
+	width: 100%
+	bottom: 0
+
+
+
+
+
+
